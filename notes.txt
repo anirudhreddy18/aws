@@ -40,3 +40,70 @@ but instances will go away when AWS needs it
 
 reservations
 1 to 3 yr term reserve
+no upfront, paprtial upfront, all upfront
+
+Acceptable policy read them
+
+IAM
+creating user, groups, roles, policies, MFA
+identity federation: able to integrate external directory mostly active directory microsoft
+user account will be stored in active directory where windows machine is connected and can use same user account in AWS
+also login to aws account
+API keys for programmatic access
+
+IAM policy ->IAM user -> single user that represents a person or service
+IAM policy ->IAM Group -> multiple users are stored in a group such as operations group, developers group, system admins group etc
+IAM policy -> IAM role -> suppose a amazon EC2 instance is provisioned and wants to access s3 for storing data
+all these 3 have policy attached to them to tell what they can access
+
+IAM users
+* assigned to individual or service
+* can be assigned
+  an access key id(username), secret access key(password) for programmatic access to AWS API, CLI, SDK
+  a password for aws management console
+* By default users cannot access anything in your account(you need to assign policies or add them to groups which has policies setup)
+*** Zero permissions assigned when a user is created in AWS.
+* root account has full admimn privileges and cannot be restricted like billing etc
+best practice:
+  * dont share/use root credentials
+  * always create IAM users and assign permissions
+  * enable MFA
+  * not to also share accounts
+*** IAM users are created to represent applications and these are known as Service Accounts  
+* you can have 5000 users per AWS account
+* each user had friendly name and an Amazon resource name(ARN) which uniquely identifies user
+* password policy
+
+IAM groups
+groups are collections of users and have policies attached to them
+use groups to assign permissions to users
+always give least privilege when assigning permissions
+cannot nest groups
+
+IAM Roles
+* with IAM roles you can delegate permissions to resources for users and services without using permanent credentials(eg username and password)
+if your application on EC2 needs to write to a DB or s3 you assign a role instead of having username or password on server
+or in code.
+* obtain temporary credentials to make API calls which will expire and gets newer ones
+* you can delegate using roles
+
+IAM policies
+* documents that define permissions can be applied to users, groups and roles
+ex: full permission to access s3
+* written in JSON
+* all permissions are denied by default (granting access to s3 wont give access to Dynamo DB)
+* most restricive policy is applied
+* IAM policy simulator
+
+IAM authentication methods
+access key ID combo(access key & secret key id)
+when created IAM returns access key id & secret key
+secret key is only returned at creation time and if lost new key should be created
+ensure access keys and secret keys are stored securely
+users can be given access to change thier own keys through IAM policy
+can dusable a user;s access key which prevents it from being used for API calls
+
+login from web browser using username & password
+allow users to change their own passwords
+can allow selected IAM users to change their passwords
+
