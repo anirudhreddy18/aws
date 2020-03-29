@@ -97,6 +97,7 @@ ex: full permission to access s3
 * IAM policy simulator
 
 IAM authentication methods
+3 types: access key, password to AWS console, Server signing certificates
 access key ID combo(access key & secret key id)
 when created IAM returns access key id & secret key
 secret key is only returned at creation time and if lost new key should be created
