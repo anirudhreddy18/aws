@@ -1,1 +1,42 @@
+AWS History
 
+when services were busy for cybermondat etc amazon realised they need to rent their hardware to someone else
+165 services  like computing, storage etc
+22 geographical regions
+
+Region 
+*a geographical area 
+* with 2 or more AZ 
+* isolated from other AWS regions (currently 22)
+Availabilty Zone(AZ) 
+* one or more data centers and have direct , low latency, high throughput adn redundant network connections b/w each other
+* are physically separate and isolated from other AZ
+* locations where you launch resources such as EC2
+* Each AZ is designed as an independent failure zone
+* AZ are physically separated within typical metrolpolitan region, and use discrete power sources
+** fast netwok connections b/w availability zones in a single region
+
+Serivces can be global or local like IAM is a global service
+s3 is global service but data will only be stored in a certain region like buckets can only be created in us east region
+global: IAM, s3, cloudfront, route 53, direct connect etc
+
+Pricing:
+compute(EC2, ECS, RDS, AWS lambda) -> pay for dedicated server how long they are used
+storage(s3, glacier, EBS, EFS) -> pay for data stored
+inbound -> data coming to s3 free
+outbound -> data coming from s3 will be charged like customers pulling data
+
+Ondemand:
+used for compute & database
+standard payments
+
+dedicated instances
+available for EC2
+complete hardware for entire customer
+
+spot instances
+purchase spare capacity with great discounts
+but instances will go away when AWS needs it
+
+reservations
+1 to 3 yr term reserve
