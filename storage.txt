@@ -1,0 +1,53 @@
+S3 -> object storage , get, pust, post interact using http methods, managed as individual objects no hierarchy
+* object includes data itself, metadata and a global unique identifier
+* data is unstructured, unlimited scalability and retention on massive amounts of unstructured data
+
+EBS
+data is stored in blocks and volumes
+mount amazon ec2 instance to a external harddrive/ssd
+you can use bloc storage devices as boot volumes
+similar to mounting data to a harddrive/ssd for containers
+
+EFS(elastic file system)
+manage data in a file hierarchy
+a file system us mounted via network to a client computer where it becomes accessible for reading and writing data
+protocols inlcude NFS
+
+Simple object storage
+connect client -> public internet -> amazon s3
+        ec2 instance -> public internet -> amazon s3
+        ec2 instance -> s3 gateway endpoint -> s3
+can store any file in s3
+high durability never lose the data
+usecases:
+   backup and storage
+   application hosting -> maange web applications
+   media hosting -> video, photo,music uploads and downloads
+   software delivery -> host software apps others can download
+   static website
+* Files are stored in buckets
+* buckets are root folders
+* anywhere from 0 to 5TB
+** s3 is a universal namepsace so bucket names must be unique globally
+** create buckets in a region close to you
+Object:
+ key (name of object)
+ value(data made up of seq if bytes)
+ verId(used for versioning)
+ metadata(data about data that is stored)
+Pricing:
+  storage
+  requests
+  storage management pricing
+  data transfer pricing
+  transfer acceleration
+
+check amazon s3 storage classes
+transfer acceleration -> speed up data uploads using cloudfront in reverse
+requestor pays -> requester pay for requests and data transfer where as you pay for storage
+tags
+events -> trigger notifcations ton sns, sqs or lamda for certain events
+static website hosting
+bit torrent
+  
+  
