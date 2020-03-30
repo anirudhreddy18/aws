@@ -26,3 +26,39 @@ Hierarchy
 select region -> VPC -> Availabilty Zone -> public/private subnet -> EC2 instance 
 you can connect to that EC2 instance from your local machine through internet
 
+User data
+is supplied by the user at instance launch in form of script
+user data is limited to 16kb
+user data & metadata are not encrypted
+you can create webserver & addd html file to httpd server
+running commands when instance launches
+
+Metadata
+metadata is about your instance that you can use to configure or manage running instance
+querying information about ec2 instance
+
+ECS
+provides a high scalable , high performance container management that supports Docker containers
+ECS launch type determines the type of infrastructure on which your tasks and services are hosted
+2 launch types are
+  Amazon EC2
+   you explicitly provision EC2 instances
+   responsible for upgrading , patching, care of Ec2 pool
+   handle cluster optimization
+   more control over infrastructure
+  Amazon Fargate
+  aws manages all of the above
+  
+AWS Lambda
+serverless computing technology that allows you to run code without provisioning or managing servers
+executes code only when needed and scales automatically
+pay only for compute time(pay nothing when code is not running)
+Benefits:
+ billed on seconds
+ integrates with all other aws services
+Usecases:
+ data processing
+ real time file processing
+ real time stream processing
+ build serverless backends for web, mobile, IOT & 3rd party api requests
+ serverless means server is always running somehwere & executing the code but you dont need to know about it or manage it or pay for it
