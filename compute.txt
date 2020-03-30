@@ -1,1 +1,28 @@
+Traditional server in Datacenter = CPU + RAM + Disk + network card interface + os
+if you need to upgrade you buy more hardware and add it to the datacenter
+EC2 instance = Amazon machine image (EBS snapshot + os) + Virtual Hardware(CPU + RAM + Disk + nic) 
+you launch more instances in virtual cloud or resize existing ec2 instance with more hardware
+
+Amazon elastic cloud compute (Ec2) is a webservice in AWS compute suite of products that provides secure, resizable compute capacity in cloud
+you can increase or decrease capacity within minutes and commission 1 to 1000 instances simultaneously
+you have complete control include root access and can start & stop instances without losing data
+you can choose multiple instance types, os, and software packages and instances with varying cpu, memory & storage
+
+AMIs
+provides information required to launch an instance
+includes the folowing:
+   one or more Elastic blockstore(EBS) snapshots or instance stored backend AMI's a template for root volume of instance(an      os,an application server and applications).
+   launch permissions to control which aws accounts can use AMI to launch instances
+   a block device mapping that specifies the volumes to attacg to instance when its launched
+
+three categories:
+  community AMIs - free to use, generally select the os you want
+  AWS marketplace amis - pay to use , if you have sone additional third party licensed software
+  My AMIs - AMIs you create yourself
+
+search for AWS instance types
+
+Hierarchy
+select region -> VPC -> Availabilty Zone -> public/private subnet -> EC2 instance 
+you can connect to that EC2 instance from your local machine through internet
 
