@@ -61,4 +61,13 @@ Usecases:
  real time file processing
  real time stream processing
  build serverless backends for web, mobile, IOT & 3rd party api requests
- serverless means server is always running somehwere & executing the code but you dont need to know about it or manage it or pay for it
+ serverless means server is always running somehwere & executing the code but you dont need to know about it or manage it or     pay for it
+ 
+AWS lightsail
+great for users who do not have deep AWS technical expertise as it makes very easy to provision servers
+provides developers compute, storage & networking capacity to easily deploy webistes, web apps and databases
+includes a VM, ssd based storage, data transfer, dns management and static ip
+it has preconfigured virtual servers that include everything to deploy & application or create a database
+can create instances and datavases and configure static ip, dns zone, load balancers, storage and snaphsots
+similar to EC2
+
