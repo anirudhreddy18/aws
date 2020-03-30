@@ -62,6 +62,7 @@ Usecases:
  real time stream processing
  build serverless backends for web, mobile, IOT & 3rd party api requests
  serverless means server is always running somehwere & executing the code but you dont need to know about it or manage it or     pay for it
+ *** cloudwatch to monitor logs
  
 AWS lightsail
 great for users who do not have deep AWS technical expertise as it makes very easy to provision servers
