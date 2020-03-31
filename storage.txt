@@ -83,3 +83,11 @@ can scale up to petabytes
 * accessed concurrently from all AZ's in a region
 on prmeises can also connect to EFS using direct connect or AWS VPN.
 *** EFS is a regional service
+
+AWS storge Gateway
+hybrid cloud storage service that gives on premise access to unlimited cloud storage
+connects on premise applications to cloud storage, caching data locally for low latency
+three types:
+TAPE
+File Gateway -> SMB, NFS or s3 API
+Volume Gateway -> block device using iSCSI
