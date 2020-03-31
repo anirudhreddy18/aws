@@ -1,1 +1,61 @@
 
+Virtual Private Cloud(VPC)
+logically isolated virtual network in the AWS cloud dedicated to an account within a region
+similar to having a Data center inside AWS
+can create multiple vpcs in a region
+isolated from other virtual networks in the AWS cloud
+provides complete control over virtual networking env including selection of IP, subnets and config of route tables and gateways
+full control who access inside your vpc
+default 5 vpcs in a region
+a default vpc is created in each region with a subnet in each AZ.
+subnets are created within AZ's
+can launch ec2 instances with in subnet in to your vpc
+AZ can more than 1 subnets public or private subnet
+
+public subnet -> can be accessed through a public ip like from ssh
+Router -> a ec2 instance wants to connect to other ec2 instance they are stored in a route table with close ip address
+Internet Gateway -> gateway to internet itself attached to a vpc but kind of sits at edge of region. amazon vpc side of a connection to the public internet.
+VPC -> has a CIDR like 172.31.0.0/16 a block of address
+subnet -> block of address within the vpc 
+peering connection -> direct connection b/w to vpc's
+VPC endpoints -> private connection to public AWS services
+
+Security Groups and network ACL's
+security groups apply at instance level they control traffic going in & out of the ec2 instance
+network access control list applies to subnet level(so if instances are talikg within subnet they dont need acl but if one instance in public subnet wants to talk to other instance in private subnet they need acl)
+security groups arew applied to instances in any subnet
+security group is stateful acl is stateless
+sg supports allow rules acl support allow & deny rules
+
+public IP address:
+lost when instance is stopped
+used in public subnets
+no charge
+associated with private ip address of instance
+
+private IP address:
+retained when instance is stopped
+used in public and private subnets
+
+Elastic IP address:
+static ip address
+charged if not used
+associated with a private ip instance
+can be moved b/w instances and elastic network adapters
+
+NAT Gateway(network address translator)
+if a ec2 isntance in private subnet wants to connect to internet -> you create a nat gateway with a elastic ip that access internet gateway in a public subnet
+then update private subnet route table with nat gateway ip
+otherway is a nat instance which is actually a ec2 instance where you have to maintain it yourself
+
+connecting securely to a VPC
+AWS managed pin -> customer gateway on DC -> vpn connection -> vpn gateway on VPC (public internet, fast to setup)
+Aws direct connect
+an alternative to using the internet to connect a cusotmers on premise sites to AWS
+can be used as hybrid cloud
+data is transmitted through a private network connection between aws and customer datacenter
+beenfits:
+  reduce cost for laerge volumes of traffic
+  increase reliability
+  increase bandwidth
+  decrease latency
