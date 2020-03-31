@@ -51,4 +51,5 @@ static website hosting
 bit torrent
 *** cross region replication is possibel and also same region replication
   
+*** Create a new role and attach it to a ec2 instance. After connecting through ssh you can read from s3.  
   
