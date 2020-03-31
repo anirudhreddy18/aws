@@ -49,5 +49,6 @@ tags
 events -> trigger notifcations ton sns, sqs or lamda for certain events
 static website hosting
 bit torrent
+*** cross region replication is possibel and also same region replication
   
   
