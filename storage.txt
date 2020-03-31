@@ -3,10 +3,22 @@ S3 -> object storage , get, pust, post interact using http methods, managed as i
 * data is unstructured, unlimited scalability and retention on massive amounts of unstructured data
 
 EBS
+provides persistent block storage volumes for use with EC2 instances in cloud
+replicated within its AZ
+persists independently of the life of instance
+volumes dont need to be attached to instance
 data is stored in blocks and volumes
 mount amazon ec2 instance to a external harddrive/ssd
-you can use bloc storage devices as boot volumes
+you can use block storage devices as boot volumes
 similar to mounting data to a harddrive/ssd for containers
+a ec2 instance can connect to multiple EBS volumes
+a volume can only be connected to 1 EC2 instance
+a ec2 instance can only connect to volume in same AZ
+root EBS volumes are deleted on termination by default
+*** uses EBS general purpose SSD by default
+*** use EBS provisioned IOPS for highest performance especially for nosql & relational databases
+*** use hard drives if you want to save money(big data) & cannot be used as boot volumes
+*** EBS volume is attached over a network and is persistent
 
 EFS(elastic file system)
 manage data in a file hierarchy
@@ -52,4 +64,10 @@ bit torrent
 *** cross region replication is possibel and also same region replication
   
 *** Create a new role and attach it to a ec2 instance. After connecting through ssh you can read from s3.  
-  
+
+EBS snaphsots
+volumes can be stored as snaphsots
+stored on s3
+snapshots are incremental so you can always store the latest volume
+since EBS volumes are AZ specific, if you have a snapshot then you can use it to create a new EC2 instance and be able to use that volume since buckets exist across region.
+
