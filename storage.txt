@@ -70,4 +70,4 @@ volumes can be stored as snaphsots
 stored on s3
 snapshots are incremental so you can always store the latest volume
 since EBS volumes are AZ specific, if you have a snapshot then you can use it to create a new EC2 instance and be able to use that volume since buckets exist across region.
-
+Exercise: create Ec2 instance -> attach volume -> create snaphsot -> create AMI image -> create new EC2 instance in different AZ with custom AMI image -> launch
