@@ -52,4 +52,6 @@ much faster than regular RDS
 LABS
 create rds instance -> allow inbound traffic to security group
 
+**** you dont need to manage operating system for DB's
+
 
