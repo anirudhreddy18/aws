@@ -1,0 +1,27 @@
+Elastic Load Balancing
+* ELB automatically distributes incoming application traffic across multiple targets such as EC2 instances, containers and Ip 
+addresses
+* ELB can hanlde load of your application traffic in a single AZ or across multi AZ
+* HA, automatic scaling, and robust security necessary to make applications fault tolerant
+* types
+   Application Load Balancer -> routes connections based on content of request level
+   layer 7(what we use)
+   most used with http & https including microservices & containers
+   routes traffic within VPC based on content of request
+   http and https
+   Network Load Balancer -> routes connection based on IP protocol data layer 4
+   handles millions of requests at low latency
+   tcp traffic
+   classic load balancer -> deprecated 
+
+*** Load balancer sits in a VPC.
+
+AutoScaling
+Horizontal scaling
+elasticity and scalability
+adding or removing based on traffic demand for your application
+right number of instances available to handle load
+collections of instances called Autoscaling Groups (ASG)
+can specify min number of instances & max number of instances
+will also ensure group has this many nunber of instances like if i specify 3 it means 3 is awlays running(self healing)
+can autoscale based on CPU usage
