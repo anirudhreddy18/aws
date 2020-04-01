@@ -15,7 +15,7 @@ Geolocation -> specify whcih region you need to go to
 Amazon CloudFront (global service)
 deliver content faster to users
 improves performance by caching media files
-Edge locations: all over the world so you can connect to that instead of connecting to the web server which might be too far
+Edge locations: all over the world & location where content is cached
 regional edge caches -> lopcated between origin web servers and global edge locations and have larger cache
 Content delivery network(CDN) that allows you to store(cache) your content at edge locations around the world
 allows customers to access content more quickly & provides security against DDos attacks
@@ -23,3 +23,8 @@ can be used for data, videos, appplications and API's
 integrates with EC2, S3, ELB, lambda functions, Route 53
 Benefits:
   cache content at edge location for fast distribution
+origin us the origin of files it will distribute
+can be s3 bucket, ec2 instance , ELB or route 53
+types:
+  web distribution
+  RTMP distribution
