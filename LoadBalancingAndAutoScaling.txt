@@ -25,3 +25,6 @@ collections of instances called Autoscaling Groups (ASG)
 can specify min number of instances & max number of instances
 will also ensure group has this many nunber of instances like if i specify 3 it means 3 is awlays running(self healing)
 can autoscale based on CPU usage
+
+*** Load baalncer does health checks
+*** ASG does EC2 instance checks
