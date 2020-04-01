@@ -28,3 +28,7 @@ can autoscale based on CPU usage
 
 *** Load baalncer does health checks
 *** ASG does EC2 instance checks
+
+LAB1
+Create Load balancers -> add EC2 instances -> creates Target groups
+Create ASC Groups -> create Load balancer -> dont add ec2 instances -> go to ASG and add Target Groups
