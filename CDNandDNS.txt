@@ -1,0 +1,25 @@
+Amazon Route 53
+Domain Registration -> register your own domains
+domain name system(DNS) resolution -> (example.com -> ip address of ec2 instances)
+health checks to ec2 instances
+Traffic flow
+
+internet client -> route 53 sends back public ip of ec2 instance -> request goes to web server
+
+simple routing policy -> same domain names multiple ip values respond with 1 ip address
+weighted routing policy -> same domain with multiple ip values based on weight you will be send to specific ip address
+latency routing policy -> will route you to closest region
+failover -> does health check on primary if it fails sends you to failover ip
+Geolocation -> specify whcih region you need to go to
+
+Amazon CLoudFront
+deliver content faster to users
+improves performance by caching media files
+Edge locations: all over the world so you can connect to that instead of connecting to the web server which might be too far
+regional edge caches -> lopcated between origin web servers and global edge locations and have larger cache
+Content delivery network(CDN) that allows you to store(cache) your content at edge locations around the world
+allows customers to access content more quickly & provides security against DDos attacks
+can be used for data, videos, appplications and API's
+integrates with EC2, S3, ELB, lambda functions, Route 53
+Benefits:
+  cache content at edge location for fast distribution
