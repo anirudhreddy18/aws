@@ -6,7 +6,7 @@ online transaction processing (OLTP) for websites
 process transactions adding , update,delete
 short transactions simple queries
 amazon rds, oracle, postgres
-mongo db, cassandra
+mongo db, cassandra, dynamoDB
 
 Analytical
 Online anayltics processing(OLAP) source dsta comes from OLTP's
@@ -31,14 +31,25 @@ data replicated synchronously across all AZ's in a region
 global tables provides a fully managed solution for deploying multi region , multi master DB
 DynamoDB acclerator(DAX) is fully amnaged, HA, in memory cache for dynamo db that delivers up to 10x performance improvement
 
-
 Redshift
-ElastiCache -> fast temprary storage for small amounts of data. You can put an elasticache infront of a relational DB for faster 
-performance
+taking data from operational Db's and do analytics
+can analyse data using SQL and Business Inteligence(BI) tools
+relational database
+process large amounts of data
+keeps three copies of your data
+
+ElastiCache 
+fast temprary storage for small amounts of data. You can put an elasticache infront of a relational DB for faster 
+performance (Database Caching)
+easy to deploy and run types: memcached or redis server nodes in cloud
+inmemory caching can be used to significantly imporve latency & throughput for heavy app workloads or compute intensive
+elasticache nodes run on EC2 instances so must choose instance type
 
 Amazon Aurora -> aws database
 supports mysql and postgres
 much faster than regular RDS
 
+LABS
 create rds instance -> allow inbound traffic to security group
+
 
