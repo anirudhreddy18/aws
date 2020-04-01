@@ -1,4 +1,4 @@
-Amazon Route 53
+Amazon Route 53 (global service)
 Domain Registration -> register your own domains
 domain name system(DNS) resolution -> (example.com -> ip address of ec2 instances)
 health checks to ec2 instances
@@ -12,7 +12,7 @@ latency routing policy -> will route you to closest region
 failover -> does health check on primary if it fails sends you to failover ip
 Geolocation -> specify whcih region you need to go to
 
-Amazon CLoudFront
+Amazon CloudFront (global service)
 deliver content faster to users
 improves performance by caching media files
 Edge locations: all over the world so you can connect to that instead of connecting to the web server which might be too far
