@@ -1,4 +1,4 @@
-CloudFormation
+CloudFormation(Regional Service)
 Template Driven provisioning
 deploys infrastructure as code(terraform)
 can deploy alomost any aws service
@@ -7,7 +7,7 @@ can deploy elastic beanstack env
 provison service such as Ec2 instances, RDS databases
 proviosn aws resources like ELB, ASG, launch configurations, target group, security group,ALB listener, RDS (stack)
 
-Elastic Beanstalk
+Elastic Beanstalk(Regional Service)
 webapps made easy (PCF)
 deploys applications on EC2
 java, .net. php etc
