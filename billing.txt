@@ -2,4 +2,13 @@ compute
 storage
 outbound data transfer
 
+Free
+VPC
+Elastic Beanstalk (will charge for resources created)
+CloudFormation(will charge for resources created)
+IAM
+AutoScaling(will charge for resources created)
+Consolidated Billing
 
+Compute
+check slides
