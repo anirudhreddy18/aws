@@ -21,3 +21,4 @@ Logs API calls made via:
   AWS management console
   SDK, CLI
   Higher level AWS services(cloudformation)
+*** keeps records for only 90 days. you need to log to s3 if you need them for more time
