@@ -1,1 +1,18 @@
+CloudFormation
+Template Driven provisioning
+deploys infrastructure as code(terraform)
+can deploy alomost any aws service
+JSON or YAML
+can deploy elastic beanstack env
+provison service such as Ec2 instances, RDS databases
+proviosn aws resources like ELB, ASG, launch configurations, target group, security group,ALB listener, RDS (stack)
 
+Elastic Beanstalk
+webapps made easy (PCF)
+deploys applications on EC2
+java, .net. php etc
+cannot deploy using cloudformation
+dont need to worry about provisioning EC2, ASG, runtime, ELB
+actually uses cloudformation to provision all the infrastructure and then run webapps on it.
+integrated with IAM and VPC
+gives full control to change it at os level.
