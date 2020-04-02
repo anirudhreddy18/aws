@@ -16,3 +16,16 @@ dont need to worry about provisioning EC2, ASG, runtime, ELB
 actually uses cloudformation to provision all the infrastructure and then run webapps on it.
 integrated with IAM and VPC
 gives full control to change it at os level.
+
+Database Migration Service
+migrate databses from onpremise to aws cloud quickly & securely
+source database remains fully operational mimimizing downtime
+migrate data from most widely used commercial & open source databases
+supports heterogeneous such as oracle to aurora
+like postgres to RDS or Ec2-> postgres
+
+AWS snowball and snowmobile
+transfer hundreds of petabytes of data b/w on premise and amazon s3
+use a storage device for physical transportation
+snowball -> petabytes
+snowmobile -> exabyte
