@@ -1,0 +1,23 @@
+Amazon Cloudwatch (can monitor any AWS Service & automated responses ready if something goes wrong)
+cloudwatch is a monitoring service for AWS cloud resources and the applications that run on AWS.
+****is for performance monitoring
+used to collect & track metrics, collect & monitor log files, set alarms
+is a regional service
+alarms can be set to react to changes in your resources
+CW events generates events when resources state changes and delivers them to targets for processing(for ex: if a resource
+execced something trigger a lambda function)
+collects & centralizes logs from AWS resources
+any log files gernerated by applications
+system wide visibiity into resource utilization
+includes application performance
+
+Amazon CloudTrail
+**** is for auditing
+web service that records activity made on your account and delivers log files to amazon s3 bucket
+about logging and saves history of API calls for your AWS account
+provides visilbility into user activity by recording actions
+enables security analysis, resource change tracking, and compliance auditing
+Logs API calls made via:
+  AWS management console
+  SDK, CLI
+  Higher level AWS services(cloudformation)
