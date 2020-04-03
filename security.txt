@@ -1,0 +1,33 @@
+shared responsibility model defines what you and AWS are responsible
+security & compliance is shared responsibility
+AWS responsible for security of cloud
+  protecting infrastructure
+  hardware, software, networking and facilities that run cloud services
+Customers
+  EC2 instance (network ACL's, security groups, os system patches & updates, IAM, client & server side encryption)
+Inherited Models
+  physical and environmental controls
+Shared controls
+  Patch Management -> AWS responsible for patching any fixing flaws in infrastructure, but customers patch their guest os and
+  applications (like linux or windows)
+  Config Management -> AWS maintains config of its infrastucture devices, but customer responsible for thier own guest os,
+  databases and applications
+  Awareness & Training -> AWS trains their own employees, customers need to train their own
+Customer Specific - controls which are solely the responsibility of customer based in application they deploy within AWS
+  Sercices and Communications Protection or zone security may require customer to route or zone data within specific security
+  env's
+
+AWS Compliance
+**** Compliance responsibilities are shared
+AWS has all these certifications like PCI, ISO etc 
+AWS artifact is a place where you can go & download security & compliance reports
+
+AWS Config
+Fully managed service that provides AWS resource inventory
+discover AWS resources, export a complete inventory and describe how a resource was configured
+configuration management
+cloudTrail: records user API activity
+config records point in time configuration details for AWS resources
+what did my resources looks like?
+who made an API call to modify resource?
+
