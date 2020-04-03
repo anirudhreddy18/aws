@@ -31,3 +31,46 @@ config records point in time configuration details for AWS resources
 what did my resources looks like?
 who made an API call to modify resource?
 
+Encryption: KMS and CloudHSM
+KMS(Key management service)
+gives control over encryption keys to protect your data
+create, import, rotate, disable, delete, define and audit use of encryption keys
+easy to integrate with AWS Services and encrypt data stored in these services(like encrypt data in RDS Database)
+CloudHSM
+is a cloud based hardware security module(HSM) enables you to easily generate and use your own encryption keys
+
+AWS inspector
+improve security & compliance
+scan applications for vulnerabilities or deviations from best practices
+an agent must be installed on Ec2 instances
+
+AWS Trusted advisor
+helps reduce cost, increates performance, and imporve security
+real tiem guidance to help you provision your resources with best practices
+advise on cost optimization, security & fault tolerance
+
+AWS personal health dashboard
+alerts and remediation guidance when AWS is experiencing events that may affect you
+aws will alert you if they are having infrastructure problems
+
+AWS WAF
+Web application firewall
+protect agianst common exploits application avaialability, security or consume excessive resouces
+mainly CSRF, Sql injection etc (malicious attacks)
+
+AWS Shield
+Protects against DDos attacks
+safeguard web applications
+minimize application downtime and latency
+standard and advanced
+
+Peneration Testing
+practice of testing of one's own app security for vulnerabilities by simulating an attack
+limite set of resource where it can be perfomed like EC2 , RDS etc
+
+*** if account is comprimised follow these steps
+AWS root account password
+IAM users credentials
+delete APi access keys
+delete any resouces you didnt create
+repsond to all notifications
