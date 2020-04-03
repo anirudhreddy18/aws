@@ -74,3 +74,15 @@ IAM users credentials
 delete APi access keys
 delete any resouces you didnt create
 repsond to all notifications
+
+Identity providers and Federation
+instead of creating users in IAM they will come from AD/LDAP(SAML) of an organization.
+Social providers like Gmail, facebook etc used for mobile apps uses (OIDC) AWS cognito
+to use an IDP, create an IAM identitiy provider to estabilish a trust relationship b/w AWS account and IDP.
+
+AWS Single sign on (SSO)
+gives access to multiple AWS accounts
+takes input from AD, Azure AD etc anf gives access to multiple aws accounts
+a company has their own AD,and if they need to access multiple aws accoint use AWS SSO
+
+AWS Directory service
