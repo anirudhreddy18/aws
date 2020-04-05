@@ -1,6 +1,7 @@
 S3 -> object storage , get, pust, post interact using http methods, managed as individual objects no hierarchy
 * object includes data itself, metadata and a global unique identifier
 * data is unstructured, unlimited scalability and retention on massive amounts of unstructured data
+*** scales horizontally
 
 EBS
 provides persistent block storage volumes for use with EC2 instances in cloud
