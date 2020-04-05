@@ -63,6 +63,7 @@ Protects against DDos attacks
 safeguard web applications
 minimize application downtime and latency
 standard and advanced
+*** integrated with cloudfront
 
 Peneration Testing
 practice of testing of one's own app security for vulnerabilities by simulating an attack
