@@ -87,21 +87,25 @@ takes input from AD, Azure AD etc anf gives access to multiple aws accounts
 a company has their own AD,and if they need to access multiple aws accoint use AWS SSO
 
 AWS Directory service
-AWS managed AD -> connects to on premise microsoft AD where all the users & thier passwords are stored
+AWS managed AD
 all you do is estabilish a trust relationship b/w on prem AD & aws managed AD
 with this auth you can access ec2 instances, use AWS management console etc
 fully managed AWS service
 best choice if you have more than 5000 users or setup trust relationship
 works with sharepoint, sql server, .net apps
 connect with VPN or directconnect
+can be used as standalone AD
 
 Simple AD -> 
 least expensive option
 less than 500 users and dont need advanced AD features
 does not support trust relationship
 standalone AD
+similar to AWS managed AD but cheaper option
 
 AD connector
 must have existing AD
+redirects requests to on premise AD
 existing AD users can access AWS assets via IAM roles
 supports MFA
+best choice if u want to use existing AD with AWS. 
